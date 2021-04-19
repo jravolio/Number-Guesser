@@ -1,6 +1,7 @@
 import random
 import os
 
+
 #cores ansi
 class colors:
     cyan = '\033[1;36m'
