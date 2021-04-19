@@ -36,6 +36,7 @@ while True:
 
 numero_gerado = gerar_numero_aleatorio()
 
+
 while True:
     try:
         resposta = int(input('Qual número foi gerado? '))
