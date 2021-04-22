@@ -41,7 +41,7 @@ quantidade_chutes = 0
 
 while True:
     try:
-        quantidade_chutes = quantidade_chutes + 1
+        quantidade_chutes += 1
         resposta = int(input('Qual número foi gerado? '))
         if resposta == numero_gerado:
             print(colors.green + f'Parabéns! Você acertou o número! o valor gerado foi: {resposta}.' + colors.end)
