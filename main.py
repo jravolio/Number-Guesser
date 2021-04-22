@@ -36,14 +36,18 @@ while True:
 
 
 numero_gerado = gerar_numero_aleatorio()
+quantidade_chutes = 0
 
 
 while True:
     try:
+        quantidade_chutes = quantidade_chutes + 1
         resposta = int(input('Qual número foi gerado? '))
         if resposta == numero_gerado:
             print(colors.green + f'Parabéns! Você acertou o número! o valor gerado foi: {resposta}.' + colors.end)
+            print(colors.white + f'Seu número de chutes foi: {quantidade_chutes}' + colors.end)
             jogar_novamente = input('Deseja jogar novamente? (s/n): ')
+            quantidade_chutes = 0
             if jogar_novamente.lower() == 'n' or jogar_novamente.lower() == 'não':
                 finalizar_programa()
             elif jogar_novamente.lower() == 's' or jogar_novamente.lower() == 'sim':
